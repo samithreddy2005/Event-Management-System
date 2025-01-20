@@ -19,6 +19,8 @@ const Navigation = () => {
           <Link to="/login" className="nav-link">Login</Link>
         </li>
       </ul>
+      {/* Sign Up Button */}
+      <button className="signup-button">Sign Up</button>
     </nav>
   );
 };
