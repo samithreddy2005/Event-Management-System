@@ -8,7 +8,7 @@ const Home = () => {
     <div className="home-container">
       <Navigation />
       <div className="home-content">
-        <h1>Welcome to Event Management System</h1>
+        <h1>Welcome to the Event Management System</h1>
         <p>Discover and manage events effortlessly!</p>
       </div>
     </div>
