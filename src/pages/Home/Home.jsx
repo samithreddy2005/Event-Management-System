@@ -45,7 +45,6 @@ const Home = () => {
               <p className="event-description">
               It  is celebrated globally as Valentine's Day, along with other observances like Library Lovers Day.
               </p>
-              
             </div>
           </div>
            {/* Example event card */}
@@ -58,7 +57,6 @@ const Home = () => {
               <p className="event-description">
               Celebrating art, music, and cultural diversity​.
               </p>
-              
             </div>
           </div>
            {/* Example event card */}
@@ -71,7 +69,6 @@ const Home = () => {
               <p className="event-description">
               A grand crafts fair showcasing India's rich handicrafts and cultural heritage.
               </p>
-              
             </div>
           </div>
            {/* Example event card */}
@@ -84,7 +81,6 @@ const Home = () => {
               <p className="event-description">
               Celebrating art, craft, cuisine, and culture against the backdrop of the Taj Maha.
               </p>
-             
             </div>
           </div>
            {/* Example event card */}
@@ -95,7 +91,6 @@ const Home = () => {
               <p className="event-description">
               A significant Hindu festival dedicated to Lord Shiva, celebrated across India​.
               </p>
-              
             </div>
           </div>
            {/* Add more event cards as needed */}
@@ -106,7 +101,6 @@ const Home = () => {
               <p className="event-description">
                 Join us for another exciting event.
               </p>
-              
             </div>
           </div>
         </div>

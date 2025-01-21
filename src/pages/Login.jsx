@@ -1,15 +1,23 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 import "./Login.css";
 
 const Login = () => {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
+    const [error, setError] = useState(""); // State to handle error messages
+    const navigate = useNavigate(); // Initialize useNavigate
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log("Username:", username);
-        console.log("Password:", password);
-        // Add login functionality here
+        // Validate the credentials
+        if (username === "samith" && password === "Samith@123") {
+            console.log("Login successful");
+            setError(""); // Clear any error messages
+            navigate("/eventList"); // Redirect to events page
+        } else {
+            setError("Invalid username or password"); // Display error message
+        }
     };
 
     return (
@@ -31,6 +39,7 @@ const Login = () => {
                         onChange={(e) => setPassword(e.target.value)}
                         required
                     />
+                    {error && <p className="error-message">{error}</p>} {/* Display error if any */}
                     <button type="submit">Login</button>
                 </form>
                 <div className="links">
@@ -41,4 +50,4 @@ const Login = () => {
     );
 };
 
-export default Login ;
+export default Login;
