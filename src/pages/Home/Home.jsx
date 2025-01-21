@@ -43,7 +43,7 @@ const Home = () => {
               <h2>Valentine's Day Event</h2>
               <p className="event-date">Date: Feb 14, 2025</p>
               <p className="event-description">
-              It  is celebrated globally as Valentine's Day, along with other observances like Library Lovers Day, National Cream-Filled Chocolates Day, and National Organ Donor Day in the U.S.
+              It  is celebrated globally as Valentine's Day, along with other observances like Library Lovers Day.
               </p>
               <div className="event-buttons">
                 <button className="btn-details">Details</button>
