@@ -80,7 +80,7 @@
   content: '';
   position: absolute;
   width: 150%;
-  height: 150%;
+  height: 150% ;
   border-radius: 50%;
   background: radial-gradient(circle, #ff6b6b, #ffa36c, transparent);
   opacity: 0.5;
