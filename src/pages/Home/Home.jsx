@@ -31,7 +31,7 @@ const Home = () => {
 
   return (
     <div className="home-container">
-      <div className="background-effect"></div>
+      <div className="animated-background"></div>
       <Navigation />
       <div className="home-content">
         <h1>Welcome to the Event Management System</h1>
