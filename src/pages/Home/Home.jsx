@@ -117,7 +117,7 @@ const Home = () => {
            <div className="event-card">
             <div className="event-details">
               <h2>Another Event</h2>
-              <p className="event-date">Date: Feb 10, 2025</p>
+              <p className="event-date">Date: not decided will be notified soon</p>
               <p className="event-description">
                 Join us for another exciting event.
               </p>
