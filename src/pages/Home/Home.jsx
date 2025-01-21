@@ -35,7 +35,7 @@ const Home = () => {
       <Navigation />
       <div className="home-content">
         <h1>Welcome to the Event Management System</h1>
-        <p>Discover & manage events effortlessly!</p>
+        <p>Done by K. Samith Reddy and K. Varshith</p>
         <div className="events-grid">
           {/* Example event card */}
           <div className="event-card">
