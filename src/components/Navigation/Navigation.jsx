@@ -10,17 +10,9 @@ const Navigation = () => {
           <Link to="/" className="nav-link">Home</Link>
         </li>
         <li className="nav-item">
-          <Link to="/events" className="nav-link">Events</Link>
-        </li>
-        <li className="nav-item">
-          <Link to="/find-events" className="nav-link">Find Events</Link>
-        </li>
-        <li className="nav-item">
           <Link to="/login" className="nav-link">Login</Link>
         </li>
       </ul>
-      {/* Sign Up Button */}
-      <button className="signup-button">Sign Up</button>
     </nav>
   );
 };
