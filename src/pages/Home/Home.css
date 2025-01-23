@@ -82,7 +82,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    animation: fadeInGrid 2s ease-in;
+    animation: fadeInGrid 2s  ease-in;
     width: 100%;
     max-width: 1200px;
   }
@@ -90,7 +90,7 @@
   .event-card {
     background: linear-gradient(145deg,   #ff5733,#5231ad);
     border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 20px  rgba(0, 0, 0, 0.2);
     overflow: hidden;
     transition: transform 0.5s, box-shadow 0.5s;
   }
@@ -107,7 +107,7 @@
     transition: transform 0.5s ease;
   }
   
-  .event-card:hover .event-image {
+  .event-card:hover .event-image  {
     transform: scale(1.1);
   }
   
