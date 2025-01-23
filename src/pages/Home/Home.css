@@ -145,13 +145,13 @@
     font-size: 14px;
     font-weight: bold;
     cursor: pointer;
-    border: none;
+    border: none ;
     transition: all 0.3s ease;
   }
   
   .btn-details {
-    background: #28a745;
-    color: #fff;
+    background: #28a745 ;
+    color: #fff ;
   }
   
   .btn-details:hover {
