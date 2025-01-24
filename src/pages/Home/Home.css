@@ -9,7 +9,7 @@
     cursor: none; /* Hide default cursor */
     display: flex;
     flex-direction: column;
-    /* justify-content: center; vahuhidjoi weefof */
+    justify-content: center;
     align-items: center;
   }
   
