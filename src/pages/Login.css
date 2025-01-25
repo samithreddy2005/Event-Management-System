@@ -47,10 +47,10 @@
     padding: 12px;
     border: none;
     border-radius: 6px;
-    background: #007bff;
-    color: white;
+    background:  #007bff;
+    color:  white;
     font-weight: bold;
-    font-size: 1rem;
+    font-size:  1rem;
     cursor: pointer;
     transition: background 0.3s ease;
 }
