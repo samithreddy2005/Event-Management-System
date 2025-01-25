@@ -7,10 +7,10 @@
     position: relative;
     overflow: hidden;
     cursor: none; /* Hide default cursor */
-    display: flex;
+    display: flex ;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center ;
   }
 
   
