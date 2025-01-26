@@ -22,7 +22,7 @@ const Login = () => {
   ];
 
   // Change background image every 3 seconds
-  useEffect(() => {
+  useEffect(() =>{
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % backgroundImages.length);
     }, 3000);
