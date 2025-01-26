@@ -27,7 +27,7 @@ const Login = () => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % backgroundImages.length);
     }, 3000);
 
-    return () => clearInterval(interval); // Cleanup on unmount
+    return () => clearInterval(interval);// Cleanup on unmount
   }, []);
 
   const handleSubmit = (e) => {
