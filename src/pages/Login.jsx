@@ -24,7 +24,7 @@ const Login = () => {
   // Change background image every 3 seconds
   useEffect(() =>{
     const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % backgroundImages.length);
+      setCurrentImageIndex((prevIndex)=> (prevIndex + 1) % backgroundImages.length);
     }, 3000);
 
     return () => clearInterval(interval);// Cleanup on unmount
@@ -32,7 +32,7 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (username === "samith" && password ===  "Samith@123") {
+    if (username === "samith"  &&  password ===  "Samith@123") {
       console.log("Login successful");
       setError("");
       navigate(" /eventList ");
