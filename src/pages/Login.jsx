@@ -43,7 +43,7 @@ const Login = () => {
 
   return (
     <div
-      className="login-container"
+      className=" login-container "
       style={{
         backgroundImage: `url(${backgroundImages[currentImageIndex]})`,
       }}
