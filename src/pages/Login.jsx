@@ -27,12 +27,12 @@ const Login = () => {
       setCurrentImageIndex((prevIndex)=> (prevIndex + 1) % backgroundImages.length);
     }, 3000);
 
-    return () => clearInterval(interval);// Cleanup on unmount
+    return () => clearInterval(interval); // Cleanup on unmount
   }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (username === "samith"  &&  password ===  "Samith@123") {
+    if (username === "samith" && password ===  "Samith@123") {
       console.log("Login successful");
       setError("");
       navigate(" /eventList ");
