@@ -43,7 +43,7 @@ const Login = () => {
 
   return (
     <div
-      className=" login-container "
+      className="login-container"
       style={{
         backgroundImage: `url(${backgroundImages[currentImageIndex]})`,
       }}
@@ -55,11 +55,11 @@ const Login = () => {
             type="text"
             placeholder="Username"
             value={username}
-            onChange={(e) => setUsername(e.target.value)}
+            onChange={(e) =>  setUsername(e.target.value)}
             required
           />
           <input
-            type="password"
+            type=" password "
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
@@ -75,5 +75,6 @@ const Login = () => {
     </div>
   );
 };
+
 
 export default Login;
