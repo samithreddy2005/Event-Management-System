@@ -1,21 +1,14 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Navigation from './components/Navigation/Navigation';
-import Home from './pages/Home';
-import Login from './pages/Login';
-import Event from './pages/Event';
+import { createBrowserRouter,RouterProvider } from 'react-router-dom'
+import {routes} from "./routes/routes"
+import "./App.css"
 
-const App = () => {
+const router = createBrowserRouter(routes)
+function App() {
   return (
-    <Router>
-      <Navigation />
-      <Switch>
-        <Route path="/login" component={Login} />
-        <Route path="/event" component={Event} />
-        <Route path="/" exact component={Home} />
-      </Switch>
-    </Router>
-  );
-};
+    <>
+      <RouterProvider router={router}/>
+    </>
+  )
+}
 
-export default App;
+export default App
