@@ -123,6 +123,51 @@
   background: linear-gradient(120deg, #1e7d32, #81c784);
 }
 
+/* Extraordinary Home Icon Animation */
+.navbar i {
+  font-size: 40px; /* Medium icon size */
+  color: #fff; /* Initial color */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Glowing effect */
+  cursor: pointer;
+  position: relative;
+  animation: homeIconGlow 1.5s ease-out infinite, homeIconHover 0.5s ease-in-out;
+  transition: transform 0.5s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.navbar i:hover {
+  transform: rotate(720deg) scale(1.3); /* Double rotation and scale */
+  color: #0d0300; /* Color change on hover */
+  text-shadow: 0 0 25px rgba(255, 87, 51, 0.7); /* Brighter glow effect */
+  box-shadow: 0 10px 20px rgba(255, 87, 51, 0.5); /* Bigger shadow for pop */
+  animation: none; /* Disable initial animation on hover */
+}
+
+/* Keyframes for Home Icon Animations */
+@keyframes homeIconGlow {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 87, 51, 0.5);
+  }
+  50% {
+    text-shadow: 0 0 30px rgba(255, 87, 51, 1);
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(255, 87, 51, 0.5);
+  }
+}
+
+@keyframes homeIconHover {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
 /* Animations */
 @keyframes fadeInLeft {
   from {
