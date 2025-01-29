@@ -32,7 +32,7 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (username === "samith" && password ===  "Samith@123") {
+    if (username==="samith" && password==="Samith@123") {
       console.log("Login successful");
       setError("");
       navigate("/eventList");
