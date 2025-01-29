@@ -59,10 +59,10 @@ const Login = () => {
             required
           />
           <input
-            type=" password "
+            type="password"
             placeholder="Password"
             value={password}
-            onChange={(e) => setPassword(e.target.value)}
+            onChange={(e)=>setPassword(e.target.value)}
             required
           />
           {error && <p className="error-message">{error}</p>}
