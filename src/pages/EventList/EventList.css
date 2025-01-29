@@ -1,19 +1,125 @@
+/* 🌈 Dynamic Background Animation */
 .event-list-wrapper {
   width: 100%;
-  height: auto;
-  background-color: var(--bg-color);
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
+  background: linear-gradient(135deg, #e0eafc, #cfdef3, #f6f6f6, #d4fc79);
+  background-size: 300% 300%;
+  animation: backgroundAnimation 8s infinite alternate ease-in-out;
+  position: relative;
+  padding: 40px 0;
 }
+
+/* 📦 Premium Glassmorphism Card */
 .event-list {
   width: 500px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.2); /* True Glass Effect */
+  backdrop-filter: blur(25px) saturate(180%);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 24px ;
-  margin-top: 140px;
-  margin-bottom: 60px;
+  gap: 24px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  position: relative;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+/* 👀 Active Scroll Animation */
+.event-list.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 🎭 Interactive 3D Hover Effect */
+.event-list:hover {
+  transform: perspective(1000px) rotateX(0deg) scale(1.03);
+  box-shadow: 0px 30px 60px rgba(0, 0, 0, 0.25);
+}
+
+/* 🌟 Soft Glow & Reflection Effects */
+.event-list::before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: -30px;
+  left: -30px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.4), transparent);
+  filter: blur(30px);
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+/* ✨ Floating Light Effects */
+.event-list-wrapper::before,
+.event-list-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  background: radial-gradient(circle, rgba(255, 182, 193, 0.4), transparent);
+  filter: blur(80px);
+  border-radius: 50%;
+  animation: glowEffect 8s infinite alternate ease-in-out;
+}
+
+.event-list-wrapper::before {
+  top: 10%;
+  left: 10%;
+}
+
+.event-list-wrapper::after {
+  bottom: 10%;
+  right: 10%;
+}
+
+/* 🔄 Animated Background Motion */
+@keyframes backgroundAnimation {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+/* 🌀 Floating Effect */
+@keyframes floatEffect {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+/* ✨ Moving Glow Effect */
+@keyframes glowEffect {
+  0% { transform: translateY(0) translateX(0); }
+  100% { transform: translateY(20px) translateX(20px); }
+}
+
+/* 💎 Fade-in Scroll Animations for Each Event Card */
+@keyframes fadeInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.event-list-wrapper .event-list .event-card {
+  animation: fadeInFromBottom 1.5s ease-out forwards;
+}
+
+/* ✨ Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
 }
