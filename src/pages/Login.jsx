@@ -37,7 +37,7 @@ const Login = () => {
       setError("");
       navigate("/eventList");
     } else {
-      setError("Invalid username or password");
+      setError(" Invalid username or password ");
     }
    };            
 
