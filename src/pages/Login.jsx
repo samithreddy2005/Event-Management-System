@@ -48,11 +48,11 @@ const Login = () => {
         backgroundImage: `url(${backgroundImages[currentImageIndex]})`,
       }}
     >
-      <div className="login-box">
+      <div className=" login-box ">
         <h1>Login</h1>
         <form onSubmit={handleSubmit}>
           <input
-          
+
             type="text"
             placeholder="Username"
             value={username}
