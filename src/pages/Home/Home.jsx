@@ -35,78 +35,91 @@ const Home = () => {
       <Navigation />
       <div className="home-content">
         <h1>Welcome to the Event Management System</h1>
-        <p>Here are few events in which you like to participate</p>
+        <p>Here are a few events in which you might like to participate</p>
         <div className="events-grid">
-          {/* Example event card */}
+          
+          {/* Valentine's Day Event */}
           <div className="event-card">
-            <div className="event-details">
-              <h2>Valentine's Day Event</h2>
-              <p className="event-date">Date: Feb 14, 2025</p>
-              <p className="event-description">
-              It  is celebrated globally as Valentine's Day, along with other observances like Library Lovers Day.
-              </p>
+            <div className="event-card-inner">
+              <div className="event-card-front">
+                <h2>Valentine's Day Event</h2>
+                <p className="event-date">Date: Feb 14, 2025</p>
+              </div>
+              <div className="event-card-back">
+                <p>It is celebrated globally as Valentine's Day, along with other observances like Library Lovers Day. ❤️</p>
+              </div>
             </div>
           </div>
-           {/* Example event card */}
-           <div className="event-card">
-            <div className="event-details">
-              <h2>Kala Ghoda Arts Festival (Mumbai) Event</h2>
-              <p className="event-date">Date: Feb. 5. 2025
-                to Feb. 13. 2025
-              </p>
-              <p className="event-description">
-              Celebrating art, music, and cultural diversity​.
-              </p>
+
+          {/* Kala Ghoda Arts Festival */}
+          <div className="event-card">
+            <div className="event-card-inner">
+              <div className="event-card-front">
+                <h2>Kala Ghoda Arts Festival</h2>
+                <p className="event-date">Date: Feb 5 - Feb 13, 2025</p>
+              </div>
+              <div className="event-card-back">
+                <p>Celebrating art, music, and cultural diversity. 🎨</p>
+              </div>
             </div>
           </div>
-           {/* Example event card */}
-           <div className="event-card">
-            <div className="event-details">
-              <h2>Surajkund Mela (Haryana) Event</h2>
-              <p className="event-date">Date: Feb. 1. 2025
-                to Feb. 15. 2025
-              </p>
-              <p className="event-description">
-              A grand crafts fair showcasing India's rich handicrafts and cultural heritage.
-              </p>
+
+          {/* Surajkund Mela */}
+          <div className="event-card">
+            <div className="event-card-inner">
+              <div className="event-card-front">
+                <h2>Surajkund Mela</h2>
+                <p className="event-date">Date: Feb 1 - Feb 15, 2025</p>
+              </div>
+              <div className="event-card-back">
+                <p>A grand crafts fair showcasing India's rich handicrafts and cultural heritage. 🏺</p>
+              </div>
             </div>
           </div>
-           {/* Example event card */}
-           <div className="event-card">
-            <div className="event-details">
-              <h2>Taj Mahotsav (Agra) Event</h2>
-              <p className="event-date">Date: Feb. 18. 2025
-                to Feb. 27. 2025
-              </p>
-              <p className="event-description">
-              Celebrating art, craft, cuisine, and culture against the backdrop of the Taj Maha.
-              </p>
+
+          {/* Taj Mahotsav */}
+          <div className="event-card">
+            <div className="event-card-inner">
+              <div className="event-card-front">
+                <h2>Taj Mahotsav</h2>
+                <p className="event-date">Date: Feb 18 - Feb 27, 2025</p>
+              </div>
+              <div className="event-card-back">
+                <p>Celebrating art, craft, cuisine, and culture against the backdrop of the Taj Mahal. 🕌</p>
+              </div>
             </div>
           </div>
-           {/* Example event card */}
-           <div className="event-card">
-            <div className="event-details">
-              <h2>Mahashivratri Event</h2>
-              <p className="event-date">Date: Feb. 26. 2025</p>
-              <p className="event-description">
-              A significant Hindu festival dedicated to Lord Shiva, celebrated across India​.
-              </p>
+
+          {/* Mahashivratri */}
+          <div className="event-card">
+            <div className="event-card-inner">
+              <div className="event-card-front">
+                <h2>Mahashivratri</h2>
+                <p className="event-date">Date: Feb 26, 2025</p>
+              </div>
+              <div className="event-card-back">
+                <p>A significant Hindu festival dedicated to Lord Shiva, celebrated across India. 🕉️</p>
+              </div>
             </div>
           </div>
-           {/* Add more event cards as needed */}
-           <div className="event-card">
-            <div className="event-details">
-              <h2>Another Event</h2>
-              <p className="event-date">Date: not decided will be notified soon</p>
-              <p className="event-description">
-                Join us for another exciting event.
-              </p>
+
+          {/* Another Event */}
+          <div className="event-card">
+            <div className="event-card-inner">
+              <div className="event-card-front">
+                <h2>Another Event</h2>
+                <p className="event-date">Date: To be notified soon</p>
+              </div>
+              <div className="event-card-back">
+                <p>Join us for another exciting event! 🎉</p>
+              </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>
   );
-} ;
+};
 
 export default Home;
