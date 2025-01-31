@@ -67,7 +67,7 @@ const Login = () => {
             required
           />
           {error && <p className="error-message">{error}</p>}
-          <button type="submit">Login</button>
+          <button type=" submit ">Login</button>
         </form>
         <div className="links">
           <a href=" # ">Forgot Password?</a> | <a href=" # ">Register</a>
