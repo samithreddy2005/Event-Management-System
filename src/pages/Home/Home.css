@@ -52,7 +52,7 @@
 @keyframes particleAnimation {
     0% {
         transform:scale(3);
-        opacity: 1;
+        opacity:1;
     }
     100% {
         transform: scale(0);
