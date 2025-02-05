@@ -33,7 +33,7 @@
     border-radius:50%;
     background: white;
     pointer-events: none ;
-    animation: particleAnimation 0.8s ease-out forwards;
+    animation:particleAnimation 0.8s ease-out forwards;
 }
 
 @keyframes gradientAnimation{
