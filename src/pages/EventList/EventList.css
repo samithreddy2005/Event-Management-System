@@ -36,6 +36,7 @@
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
+
 /* 👀 Active Scroll Animation */
 .event-list.show {
   opacity: 1;
