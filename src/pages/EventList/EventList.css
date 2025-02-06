@@ -51,6 +51,7 @@
 }
 
 /* 🌟 Soft Glow & Reflection Effects */
+
 .event-list::before {
   content: "";
   position: absolute;
