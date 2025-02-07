@@ -43,7 +43,7 @@
   transform: translateY(0);
 }
 
-/* 🎭 Interactive 3D Hover Effect */
+/* x🎭 Interactive 3D Hover Effect */
 
 .event-list:hover  {
   transform: perspective(1000px) rotateX(0deg) scale(1.03);
