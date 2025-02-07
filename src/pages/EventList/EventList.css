@@ -64,6 +64,7 @@
   opacity: 0.6;
 }
 
+
 /* ✨ Floating Light Effects */
 .event-list-wrapper::before,
 .event-list-wrapper::after {
