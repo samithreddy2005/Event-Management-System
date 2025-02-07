@@ -37,7 +37,7 @@
 }
 
 
-/* 👀 Active Scroll Animation */
+/*w👀 Active Scroll Animation */
 .event-list.show {
   opacity: 1;
   transform: translateY(0);
