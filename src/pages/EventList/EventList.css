@@ -52,7 +52,7 @@
 /* 🌟 Soft Glow & Reflection Effects */
 
 .event-list::before {
-  content: "";
+  content: "" ;
   position: absolute;
   width: 80%;
   height: 80%;
