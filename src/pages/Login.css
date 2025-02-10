@@ -43,7 +43,7 @@
     animation: slideIn 1s ease-in-out;
 }
 
-.login-box form input:focus {
+.login-box form input:focus  {
     border-color: #4ca1af;
     transform: scale(1.05);
 }
