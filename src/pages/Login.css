@@ -81,7 +81,7 @@
     text-decoration: underline;
 }
 
-@keyframes fadeIn {
+@keyframes fadeIn{
     from {
         opacity: 0;
     }
