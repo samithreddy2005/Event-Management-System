@@ -64,7 +64,6 @@
     animation: bounceIn 1.2s ease-in-out;
 }
 
-
 .login-box form button:hover {
     background: #0056b3;
     transform: scale(1.1);
