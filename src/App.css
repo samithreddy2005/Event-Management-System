@@ -10,10 +10,11 @@
 a{
 
   text-decoration:none!important;
-  
+
 }
 
 * {
+
   margin: 0;
   padding: 0;
   box-sizing:border-box;
@@ -21,4 +22,5 @@ a{
   font-size: 14px;
   font-weight: 400 ;
   color:  rgb(43, 50, 43) ;
+  
 }
