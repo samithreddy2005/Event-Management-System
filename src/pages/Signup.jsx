@@ -19,7 +19,7 @@ const Signup = () => {
     e.preventDefault();
 
     const { username, email, password } = formData;
-
+// jfpe
     // Basic Validation
     if (!username || !email || !password) {
       alert("Please fill in all fields!");
