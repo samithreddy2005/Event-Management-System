@@ -25,7 +25,7 @@ const Signup = () => {
       alert("Please fill in all fields!");
       return;
     }
-
+// ijiej
     // Check if email already exists
     const existingUser = JSON.parse(localStorage.getItem("user"));
     if (existingUser && existingUser.email === email) {
