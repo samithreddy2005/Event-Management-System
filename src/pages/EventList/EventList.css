@@ -1,130 +1,122 @@
-/* 🌈 Dynamic Background Animation */
-.event-list-wrapper {
+/* 🌌 Tabs Container */
+.tabs-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  overflow-x: hidden;
-  background: linear-gradient(135deg, #e0eafc, #cfdef3, #f6f6f6, #d4fc79);
-  background-size: 300% 300%;
-  animation: backgroundAnimation 8s infinite alternate ease-in-out;
+  max-width: 900px;
+  margin: 20px auto;
+  overflow: hidden;
   position: relative;
-  padding: 40px 0;
 }
 
-
-/* 📦 Premium Glassmorphism Card */
-.event-list {
-  width: 500px;
-  padding: 40px;
-  background: rgba(255, 255, 255, 0.2); /* True Glass Effect */
-  backdrop-filter: blur(25px) saturate(180%);
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  border-radius: 20px;
-  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.2);
+/* 🔄 Scrollable Tab Wrapper */
+.tabs-wrapper {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 1s ease-out, transform 1s ease-out;
-  position: relative;
-  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-}
-
-
-/*w👀 Active Scroll Animation */
-.event-list.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* x🎭 Interactive 3D Hover Effect */
-
-.event-list:hover  {
-  transform: perspective(1000px) rotateX(0deg) scale(1.03);
-  box-shadow: 0px 30px 60px rgba(0, 0, 0, 0.25);
-}
-/* 🌟 Soft Glow & Reflection Effects  */
-
-.event-list::before  {
-  content: "" ;
-  position: absolute ;
-  width:80%;
-  height: 80%;
-  top: -30px ;
-  left: -30px;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.4), transparent);
-  filter: blur(30px);
-  border-radius: 50%;
-  opacity: 0.6;
-  
-}
-
-
-/* ✨ Floating Light Effects */
-.event-list-wrapper::before,
-.event-list-wrapper::after {
-  content: "";
-  position: absolute;
-  width: 180px;
-  height: 180px;
-  background: radial-gradient(circle, rgba(255, 182, 193, 0.4), transparent);
-  filter: blur(80px);
-  border-radius: 50%;
-  animation: glowEffect 8s infinite alternate ease-in-out;
-}
-
-.event-list-wrapper::before {
-  top: 10%;
-  left: 10%;
-}
-
-.event-list-wrapper::after {
-  bottom: 10%;
-  right: 10%;
-}
-
-/* 🔄 Animated Background Motion */
-@keyframes backgroundAnimation {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 100% 50%; }
-}
-
-/* 🌀 Floating Effect */
-@keyframes floatEffect {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
-}
-
-/* ✨ Moving Glow Effect */
-@keyframes glowEffect {
-  0% { transform: translateY(0) translateX(0); }
-  100% { transform: translateY(20px) translateX(20px); }
-}
-
-/* 💎 Fade-in Scroll Animations for Each Event Card */
-@keyframes fadeInFromBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(100px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.event-list-wrapper .event-list .event-card {
-  animation: fadeInFromBottom 1.5s ease-out forwards;
-}
-
-/* ✨ Smooth Scrolling */
-html {
+  gap: 10px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
+  padding: 10px 0;
+  white-space: nowrap;
+  width: 100%;
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+/* Hide scrollbar for WebKit browsers */
+.tabs-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* 🔥 Individual Tabs */
+.tab {
+  padding: 12px 20px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  user-select: none;
+  display: inline-block;
+  white-space: nowrap;
+  scroll-snap-align: center; /* Ensures smooth snapping */
+}
+
+/* 🎯 Active Tab Indicator */
+.tab:focus,
+.tab:hover {
+  background: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+
+/* 🌀 Smooth Hover Effect */
+.tab:hover {
+  transform: scale(1.05);
+}
+
+/* ◀️ Scrollable Navigation Buttons */
+.scroll-btn {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background 0.3s ease;
+}
+
+.scroll-btn.left {
+  left: -40px;
+}
+
+.scroll-btn.right {
+  right: -40px;
+}
+
+.scroll-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+/* 🌅 Beautiful Gradient Background */
+.event-list-container {
+  background: linear-gradient(to right, #a1c4fd, #c2e9fb, #d4fc79);
+  min-height: 100vh; /* Full-screen height */
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 🎭 Event List Wrapper (No Effect on Home Page) */
+.event-list-wrapper {
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* 📦 Event Cards */
+.event-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* 🏆 Animated Appearance */
+.event-list .event-card {
+  transition: transform 0.4s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.event-list .event-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
