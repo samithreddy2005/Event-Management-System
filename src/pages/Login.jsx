@@ -14,7 +14,7 @@ const Login = () => {
     "https://static.vecteezy.com/system/resources/previews/029/332/550/non_2x/ai-generative-party-scene-from-a-festive-night-club-with-happy-people-and-friends-sony-a7s-realistic-image-free-photo.jpg",
     "https://www.visionvivaah.com/blog/wp-content/uploads/2019/11/Top-10-Event-Management-Companies-In-India.jpg",
     "https://convene.com/wp-content/uploads/2019/07/Convene-Hackathons-1-scaled.jpg",
-    "https://uploads.lebonbon.fr/source/2023/april/2043806/acb5d4c2-febf-451c-9a64-7c042769fade_1_2000.jpg",
+    "https://www.paperlesspost.com/blog/wp-content/uploads/Blog_2-18_Holi-Party-Ideas_01-hero.png",
     "https://images.pexels.com/photos/3171837/pexels-photo-3171837.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   ];
 
