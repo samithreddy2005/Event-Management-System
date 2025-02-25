@@ -8,8 +8,6 @@ const Signup = () => {
     email: "",
     password: "",
   });
-//  eeijde
-
   const navigate = useNavigate ();
 
   const handleChange = (e) => {
