@@ -1,48 +1,48 @@
 export const eventList = [
     {
       id: 1,
-      heading: "Epic Comic Con",
-      date: { year: 2023, month: "July" },
-      location: "Mumbai, India",
+      heading: "Find your Valentine 💖",
+      date: { year: 2025, month: "Feburary" },
+      location: "Hyderabad, India",
       description:
-        "Experience the most anticipated gathering of comic enthusiasts! Epic Comic Con invites you to immerse yourself in a realm where heroes and villains collide. Unveil exclusive collectibles, join panels with renowned artists, and witness legendary cosplayers bring your favorite characters to life. Whether you're a seasoned comic collector or just starting your journey, this event guarantees an epic adventure!",
-      img: "https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29taWNzfGVufDB8fDB8fHww",
+        "Celebrate love in its most epic form this Valentine’s Day! 💖✨ Join us for a heart-pounding celebration of passion, romance, and adventure. Whether you're swooning over comic book couples or sharing your favorite fandom with that special someone, this day promises unforgettable moments. Embrace the magic of love with exclusive gifts, special events, and the chance to create memories that will last forever. Don’t miss out on the ultimate Valentine's Day experience – where every heart has its hero! 💌 #ValentinesDay #EpicLove",
+      img: "https://i.pinimg.com/736x/72/bc/cc/72bccccc20c857418ae27d253370c34a.jpg",
     },
     {
       id: 2,
-      heading: "Fantasy Gaming Expo",
-      date: { year: 2024, month: "May" },
-      location: "Delhi, India",
+      heading: "Kala Ghoda kaa Art 🐎",
+      date: { year: 2025, month: "Feburary" },
+      location: "Mumbai, India",
       description:
-        "Embark on a journey through fantastical realms at the Fantasy Gaming Expo! Delve into an immersive gaming experience that transcends reality. From tabletop adventures to cutting-edge VR simulations, this expo celebrates the essence of fantasy in gaming. Unleash your strategic prowess, forge alliances, and discover a world where every move shapes the destiny of kingdoms!",
-      img: "https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "Step into a vibrant world where art, history, and culture blend in the heart of Mumbai. Whether you're strolling through the colorful lanes or exploring the iconic galleries, every corner of Kala Ghoda has a story to tell. From the bustling art scene to the tantalizing street food, this cultural haven promises an unforgettable experience. Come and immerse yourself in the rhythm of creativity and heritage! 🎨🖤",
+      img: "https://img.freepik.com/premium-photo/colorful-illustration-kala-ghoda-arts-festival-design-concept-generative-ai_945369-49700.jpg?w=1800",
     },
     {
       id: 3,
-      heading: "Cosplay Carnival",
-      date: { year: 2023, month: "September" },
-      location: "Bangalore, India",
+      heading: "Surajkund Mela ☀️",
+      date: { year: 2025, month: "Feburary" },
+      location: "Haryana, India",
       description:
-        "Welcome to the Cosplay Carnival, where creativity knows no bounds! Embrace the art of transformation as cosplayers from across galaxies gather to showcase their craftsmanship. Unleash your alter ego, don your meticulously crafted costumes, and strut into a world where fantasy meets reality. With contests, workshops, and a vibrant community, this carnival invites you to step into a realm of endless possibilities!",
-      img: "https://images.unsplash.com/photo-1502136969935-8d8eef54d77b?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "Step into a world where heritage, creativity, and craftsmanship come alive! Surajkund Mela 2025 is the ultimate celebration of Indian art, culture, and tradition. From handwoven textiles to mesmerizing performances, this vibrant fair brings together artisans and performers from across the globe. Explore unique handicrafts, savor delicious regional cuisines, and experience the rich diversity of our roots. Whether you're a culture enthusiast or a collector of rare treasures, this mela promises an unforgettable experience! 🌍🪔",
+      img: "https://moc.php-staging.com/files/events_image/MOC%203.jpg",
     },
     {
       id: 4,
-      heading: "Sci-Fi Symposium",
-      date: { year: 2024, month: "March" },
-      location: "Hyderabad, India",
+      heading: "Taj Mahotsav 🕌",
+      date: { year: 2025, month: "Feburary" },
+      location: "Agra, India",
       description:
-        "Dive into the future at the Sci-Fi Symposium, a convergence of cutting-edge ideas and futuristic visions! Explore the technological marvels reshaping our world, engage with visionary speakers, and ponder the possibilities of tomorrow. From AI advancements to interstellar exploration, this symposium ignites curiosity and fuels the imagination. Join us on this journey to unravel the mysteries of science fiction!",
-      img: "https://images.unsplash.com/photo-1589254065878-42c9da997008?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "Join us for an enchanting celebration where art, culture, and history converge at one of India's most iconic festivals! The Taj Mahotsav brings together stunning performances, exquisite handicrafts, and flavors from every corner of the country. Immerse yourself in a world of traditional music, dance, and delectable cuisines, all set against the majestic backdrop of the Taj Mahal. Whether you’re a history lover, art enthusiast, or simply seeking a cultural adventure, this event offers an unforgettable journey through India’s rich heritage! 🏰🎶",
+      img: "https://theimperialtours.com/wp-content/uploads/2025/01/Taj-Mahotsav-2025.webp",
     },
     {
       id: 5,
-      heading: "Epic Comic Con",
-      date: { year: 2023, month: "January" },
-      location: "Mumbai, India",
+      heading: "Maha Shivaratri🌙🕉️",
+      date: { year: 2025, month: "Feburary" },
+      location: "Kashi Vishwanath, India",
       description:
-        "Experience the most anticipated gathering of comic enthusiasts! Epic Comic Con invites you to immerse yourself in a realm where heroes and villains collide. Unveil exclusive collectibles, join panels with renowned artists, and witness legendary cosplayers bring your favorite characters to life. Whether you're a seasoned comic collector or just starting your journey, this event guarantees an epic adventure!",
-      img: "https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29taWNzfGVufDB8fDB8fHww",
+        "This Maha Shivaratri, immerse yourself in the energy of devotion, spirituality, and tranquility. A night dedicated to Lord Shiva, where prayers, chants, and fasting unite millions of devotees around the world. Witness powerful rituals, experience soulful music, and connect with the divine under the starry sky. Whether you're seeking spiritual enlightenment or simply embracing the sacred vibe of the night, this festival offers a transformative experience. 🌙🙏",
+      img: "https://png.pngtree.com/background/20210715/original/pngtree-happy-maha-shivratri-shivlinga-with-trishul-picture-image_1310658.jpg",
     },
     
   ];
