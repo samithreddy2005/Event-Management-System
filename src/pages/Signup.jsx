@@ -8,16 +8,17 @@ const Signup = () => {
     email: "",
     password: "",
   });
+//  eeijde
 
-  
   const navigate = useNavigate ();
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const  handleSubmit = (e) => {
     e.preventDefault();
+
     const { username, email, password } = formData;
 
 
