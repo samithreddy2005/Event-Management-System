@@ -19,6 +19,7 @@ const Signup = () => {
     e.preventDefault();
     const { username, email, password } = formData;
 
+    
     if (!username || !email || !password) {
       alert("⚠️ Please fill in all fields!");
       return;
