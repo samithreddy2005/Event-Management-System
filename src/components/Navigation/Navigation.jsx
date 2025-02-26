@@ -24,8 +24,10 @@ const Navigation = () => {
         )}
       </ul>
 
-      {/* Sign Up Button */}
-      <Link to="/signup" className="signup-button">Sign Up</Link>
+      {/* Show Signup button only on Home Page */}
+      {location.pathname === '/' && (
+        <Link to="/signup" className="signup-button nav-link">Sign Up</Link>
+      )}
     </nav>
   );
 };
