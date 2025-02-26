@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 import "./Login.css";
 
 const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
 
   // Background images array
@@ -34,7 +36,7 @@ const Login = () => {
 
     if (storedUser && storedUser.username === username && storedUser.password === password) {
       alert("Login Successful! ✅");
-      navigate("/eventList");  // Redirect to event list page
+      navigate("/eventList"); // Redirect to event list page
     } else {
       setError("Invalid username or password ❌");
     }
@@ -46,7 +48,20 @@ const Login = () => {
         <h1>Login</h1>
         <form onSubmit={handleSubmit}>
           <input type="text" placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)} required />
-          <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} required />
+          
+          <div className="password-container">
+            <input
+              type={showPassword ? "text" : "password"}
+              placeholder="Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
+            <span className="eye-icon" onClick={() => setShowPassword(!showPassword)}>
+              {showPassword ? <FaEyeSlash className="eye-white" /> : <FaEye className="eye-white" />}
+            </span>
+          </div>
+
           {error && <p className="error-message">{error}</p>}
           <button type="submit">Login</button>
         </form>
