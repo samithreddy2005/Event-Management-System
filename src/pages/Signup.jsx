@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { FaGoogle, FaFacebook } from "react-icons/fa";
 import "./Signup.css";
 
 const Signup = () => {
@@ -8,17 +9,17 @@ const Signup = () => {
     email: "",
     password: "",
   });
-  const navigate = useNavigate ();
+
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const  handleSubmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
     const { username, email, password } = formData;
-
 
     if (!username || !email || !password) {
       alert("⚠️ Please fill in all fields!");
@@ -42,6 +43,17 @@ const Signup = () => {
           <input type="password" name="password" placeholder="Password" onChange={handleChange} required />
           <button type="submit">Sign Up</button>
         </form>
+
+        <p>Or sign up using:</p>
+        <div className="social-signup">
+          <button className="social-btn google">
+            <FaGoogle size={20} /> Sign up with Google
+          </button>
+          <button className="social-btn facebook">
+            <FaFacebook size={20} /> Sign up with Facebook
+          </button>
+        </div>
+
         <p>Already have an account? <a href="/login">Login</a></p>
       </div>
     </div>
