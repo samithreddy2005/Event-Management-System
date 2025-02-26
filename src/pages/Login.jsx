@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { Eye, EyeOff } from "lucide-react";  // Import Eye Icons
 import "./Login.css";
 
 const Login = () => {
@@ -30,13 +30,11 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    // Get stored user data
     const storedUser = JSON.parse(localStorage.getItem("user"));
 
     if (storedUser && storedUser.username === username && storedUser.password === password) {
       alert("Login Successful! ✅");
-      navigate("/eventList"); // Redirect to event list page
+      navigate("/eventList");
     } else {
       setError("Invalid username or password ❌");
     }
@@ -47,26 +45,38 @@ const Login = () => {
       <div className="login-box">
         <h1>Login</h1>
         <form onSubmit={handleSubmit}>
-          <input type="text" placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)} required />
-          
+          <input 
+            type="text" 
+            placeholder="Username" 
+            value={username} 
+            onChange={(e) => setUsername(e.target.value)} 
+            required 
+          />
+
           <div className="password-container">
-            <input
-              type={showPassword ? "text" : "password"}
-              placeholder="Password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              required
+            <input 
+              type={showPassword ? "text" : "password"} 
+              placeholder="Password" 
+              value={password} 
+              onChange={(e) => setPassword(e.target.value)} 
+              required 
             />
-            <span className="eye-icon" onClick={() => setShowPassword(!showPassword)}>
-              {showPassword ? <FaEyeSlash className="eye-white" /> : <FaEye className="eye-white" />}
+            <span 
+              className="eye-icon" 
+              onClick={() => setShowPassword(!showPassword)}
+            >
+              {showPassword ? <EyeOff size={20} color="white" /> : <Eye size={20} color="white" />}
             </span>
           </div>
 
           {error && <p className="error-message">{error}</p>}
           <button type="submit">Login</button>
         </form>
+
         <div className="links">
-          <a href="#">Forgot Password?</a>
+          <a onClick={() => navigate("/signup")} style={{ cursor: "pointer", color: "white" }}>
+            Forgot Password?
+          </a>
         </div>
       </div>
     </div>
