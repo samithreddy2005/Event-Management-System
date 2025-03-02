@@ -76,6 +76,7 @@
 }
 
 /* Placeholder & Focus Effect */
+
 .input-group input::placeholder {
   color: rgba(255, 255, 255, 0.7);
   text-align: center;
@@ -87,7 +88,9 @@
   box-shadow: 0 0 12px rgba(0, 195, 255, 0.6);
 }
 
+
 /* Button - Neon Effect */
+
 button {
   width: 100%;
   padding: 14px;
@@ -115,6 +118,7 @@ p {
   color: rgba(255, 255, 255, 0.8);
 }
 
+
 p a {
   color: #00c3ff;
   text-decoration: none;
@@ -138,6 +142,7 @@ p a:hover {
     transform: translateY(0);
   }
 }
+
 
 /* Mobile Responsiveness */
 @media (max-width: 500px) {
