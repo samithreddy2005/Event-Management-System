@@ -196,12 +196,10 @@ p a:hover {
 .social-btn svg {
   margin-right: 10px;
 }
-
 /* Ensure the buttons match the signup button */
 .google {
   background: linear-gradient(135deg, #00c3ff, #4dffea);
 }
-
 
 .facebook {
   background: linear-gradient(135deg, #00c3ff, #4dffea);
