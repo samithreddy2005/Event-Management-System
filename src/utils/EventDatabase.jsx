@@ -18,6 +18,7 @@ export const eventList = [
       img: "https://img.freepik.com/premium-photo/colorful-illustration-kala-ghoda-arts-festival-design-concept-generative-ai_945369-49700.jpg?w=1800",
     },
     {
+      
       id: 3,
       heading: "Surajkund Mela ☀️",
       date: { year: 2025, month: "Feburary" },
