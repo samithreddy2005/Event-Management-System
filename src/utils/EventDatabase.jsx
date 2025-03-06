@@ -36,8 +36,6 @@ export const eventList = [
       img: "https://theimperialtours.com/wp-content/uploads/2025/01/Taj-Mahotsav-2025.webp",
     },
     {
-
-      // ifhid
       id: 5,
       heading: "Maha Shivaratri🌙🕉️",
       date: { year: 2025, month: "Feburary" },
