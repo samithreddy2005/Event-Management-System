@@ -151,6 +151,7 @@ p a:hover {
     padding: 2rem;
   }
 
+ 
   .signup-box h2 {
     font-size: 1.8rem;
   }
@@ -160,6 +161,7 @@ p a:hover {
     padding: 12px;
   }
 }
+
 /* Social Signup Buttons */
 .social-signup {
   display: flex;
@@ -196,7 +198,6 @@ p a:hover {
 .social-btn svg {
   margin-right: 10px;
 }
-
 /* Ensure the buttons match the signup button */
 .google {
   background: linear-gradient(135deg, #00c3ff, #4dffea);
