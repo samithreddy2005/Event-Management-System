@@ -27,6 +27,7 @@ export const eventList = [
       img: "https://moc.php-staging.com/files/events_image/MOC%203.jpg",
     },
     {
+      
       id: 4,
       heading: "Taj Mahotsav 🕌",
       date: { year: 2025, month: "Feburary" },
