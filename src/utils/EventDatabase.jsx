@@ -28,6 +28,7 @@ export const eventList = [
     },
     {
       id: 4,
+      
       heading: "Taj Mahotsav 🕌",
       date: { year: 2025, month: "Feburary" },
       location: "Agra, India",
