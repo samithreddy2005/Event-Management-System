@@ -37,7 +37,6 @@ export const eventList = [
     },
     {
       id: 5,
-      
       heading: "Maha Shivaratri🌙🕉️",
       date: { year: 2025, month: "Feburary" },
       location: "Kashi Vishwanath, India",
