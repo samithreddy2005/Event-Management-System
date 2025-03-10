@@ -9,9 +9,7 @@ export const eventList = [
       img: "https://i.pinimg.com/736x/72/bc/cc/72bccccc20c857418ae27d253370c34a.jpg",
     },
     {
-      
-
-      
+       
       id: 2,
       heading: "Kala Ghoda kaa Art 🐎",
       date: { year: 2025, month: "Feburary" },
