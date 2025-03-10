@@ -10,6 +10,7 @@ export const eventList = [
     },
     {
       
+      
       id: 2,
       heading: "Kala Ghoda kaa Art 🐎",
       date: { year: 2025, month: "Feburary" },
