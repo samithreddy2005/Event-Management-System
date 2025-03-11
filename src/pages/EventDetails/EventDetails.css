@@ -69,3 +69,71 @@
 .description-heading-para {
   font-size: 16px !important;
 }
+
+/* 🔥 3D Register Button */
+.register-btn {
+  background: linear-gradient(45deg, #ff6b81, #ff4757);
+  color: white;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 5px 15px rgba(255, 105, 180, 0.3);
+  margin-top: 20px;
+}
+
+.register-btn:hover {
+  transform: scale(1.1);
+}
+
+/* 💌 Registration Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  background: #2ed573;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.close-btn {
+  background: #ff4757;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+}

@@ -1,4 +1,6 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
+import { useState } from "react";
+import { motion } from "framer-motion";
 import { eventList } from "../../utils/EventDatabase";
 import Navigation from "../../components/Navigation/Navigation";
 import { MdCalendarMonth } from "react-icons/md";
@@ -8,6 +10,8 @@ import "./EventDetails.css";
 const EventDetails = () => {
   const { id } = useParams();
   const numId = Number(id);
+  const navigate = useNavigate(); // ✅ Added navigate
+  const [showModal, setShowModal] = useState(false);
 
   // Find event by ID
   const filteredEvent = eventList.find(eventDetail => eventDetail.id === numId);
@@ -52,6 +56,16 @@ const EventDetails = () => {
               {filteredEvent.description || "No description available."}
             </span>
           </p>
+
+          {/* 🔥 Updated 3D Register Button 🔥 */}
+          <motion.button
+            onClick={() => navigate("/register")} // ✅ Updated to navigate
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="register-btn"
+          >
+            💌 Register Now
+          </motion.button>
         </div>
       </div>
     </div>
