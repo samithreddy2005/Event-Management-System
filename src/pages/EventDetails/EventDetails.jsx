@@ -10,7 +10,8 @@ import "./EventDetails.css";
 const EventDetails = () => {
   const { id } = useParams();
   const numId = Number(id);
-  const navigate = useNavigate(); // ✅ Added navigate
+  const navigate = useNavigate(); 
+  // ✅ Added navigate
   const [showModal, setShowModal] = useState(false);
 
   // Find event by ID
