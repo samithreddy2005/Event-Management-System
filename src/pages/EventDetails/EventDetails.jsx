@@ -7,7 +7,6 @@ import { MdCalendarMonth } from "react-icons/md";
 import { IoLocationSharp } from "react-icons/io5";
 import "./EventDetails.css";
 const EventDetails = () => {
-  
   const { id } = useParams();
   const numId = Number(id);
   const navigate = useNavigate(); // ✅ Added navigate
