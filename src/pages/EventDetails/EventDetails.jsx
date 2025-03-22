@@ -12,7 +12,7 @@ const EventDetails = () => {
   const navigate = useNavigate(); // ✅ Added navigate
   const [showModal, setShowModal] =  useState(false); 
   // Find event by ID
-  const filteredEvent =  eventList.find(eventDetail => eventDetail.id === numId);
+  const filteredEvent = eventList.find(eventDetail => eventDetail.id === numId);
   // Handle case where event is not found
   if (!filteredEvent) {
     return (
