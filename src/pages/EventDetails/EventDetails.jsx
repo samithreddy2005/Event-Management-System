@@ -16,7 +16,7 @@ const EventDetails = () => {
   // Handle case where event is not found
   if (!filteredEvent) {
     return (
-      <div className=" event-details-container">
+      <div className="event-details-container">
         <Navigation />
         <h2 className="not-found">🚨 Event Not Found! 😕</h2>
       </div>
