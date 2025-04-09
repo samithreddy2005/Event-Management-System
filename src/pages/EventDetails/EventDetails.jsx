@@ -18,7 +18,7 @@ const EventDetails = () => {
     return (
       <div className="event-details-container">
         <Navigation />
-        <h2 className="not-found">🚨Event Not Found! 😕</h2>
+        <h2 className="not-found"> 🚨Event Not Found! 😕</h2>
       </div>
     );
   }
