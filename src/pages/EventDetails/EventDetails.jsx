@@ -6,16 +6,13 @@ import Navigation from "../../components/Navigation/Navigation";
 import { MdCalendarMonth } from "react-icons/md";
 import { IoLocationSharp } from "react-icons/io5";
 import "./EventDetails.css";
-
 const EventDetails = () => {
-  const { id } = useParams();
+  const { id } = useParams(); 
   const numId = Number(id);
   const navigate = useNavigate(); // ✅ Added navigate
-  const [showModal, setShowModal] = useState(false);
-
+  const [showModal, setShowModal] =  useState(false); 
   // Find event by ID
   const filteredEvent = eventList.find(eventDetail => eventDetail.id === numId);
-
   // Handle case where event is not found
   if (!filteredEvent) {
     return (
