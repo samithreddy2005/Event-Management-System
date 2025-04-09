@@ -4,8 +4,8 @@ import Login from "../pages/Login";
 import EventList from "../pages/EventList/EventList";
 import EventDetails from "../pages/EventDetails/EventDetails";
 import Signup from "../pages/Signup";
-import Register from "../pages/Register";
 import Payment from "../pages/Payment"; // Ensuring consistent structure for pages
+import MultiStepRegister from "../pages/MultiStepRegister";
 
 export const routes = createBrowserRouter([
   { path: "/", element: <Home /> },
@@ -13,6 +13,7 @@ export const routes = createBrowserRouter([
   { path: "/eventList", element: <EventList /> },
   { path: "/signup", element: <Signup /> },
   { path: "/events/:id", element: <EventDetails /> },
-  { path: "/register", element: <Register /> },
   { path: "/payment", element: <Payment /> },
+  { path: "/register", element: <MultiStepRegister />,
+  },
 ]);
