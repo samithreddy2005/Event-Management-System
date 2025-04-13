@@ -1,18 +1,21 @@
-// src/pages/MultiStepRegister.jsx
-import React, { useState } from 'react';
-import './MultiStepRegister.css';
-import { useNavigate } from 'react-router-dom';
+import React, { useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
+import "./MultiStepRegister.css";
 
 const MultiStepRegister = () => {
-  const [step, setStep] = useState(1);
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    password: '',
-    confirmPassword: ''
-  });
+  const location = useLocation();
   const navigate = useNavigate();
+  const eventData = location.state || {}; // Retrieve event data from state
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    password: "",
+    confirmPassword: "",
+  });
+
+  const [step, setStep] = useState(1);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -28,21 +31,15 @@ const MultiStepRegister = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    document.querySelector('.multi-step-container').classList.add('submitted');
-    setTimeout(() => navigate('/payment'), 2000);
+    navigate("/confirmation", { state: { ...formData, ...eventData } });
   };
 
   return (
     <div className="register-bg">
       <div className="multi-step-container">
         <div className="step-header">
-          <h2>Event Registration</h2>
+          <h2>Register for {eventData.name || "Event"}</h2>
           <p className="step-subtext">Step {step} of 2</p>
-        </div>
-
-        <div className="step-indicator">
-          <div className={`circle ${step === 1 ? 'active' : ''}`}>1</div>
-          <div className={`circle ${step === 2 ? 'active' : ''}`}>2</div>
         </div>
 
         <form onSubmit={handleSubmit}>
@@ -135,9 +132,6 @@ const MultiStepRegister = () => {
             )}
           </div>
         </form>
-
-        <div className="confirmation-animation">
-        </div>
       </div>
     </div>
   );
