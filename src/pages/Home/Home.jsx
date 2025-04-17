@@ -11,7 +11,7 @@ const Home = () => {
       particle.style.left = `${x}px`;
       particle.style.top = `${y}px`;
       document.body.appendChild(particle);
-
+ 
       // Remove particle after animation ends
       particle.addEventListener('animationend', () => {
         particle.remove();
