@@ -9,6 +9,7 @@
   background: url("https://images.pexels.com/photos/2747449/pexels-photo-2747449.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat center center/cover;
   padding: 20px;
 }
+
 /* Background Overlay */
 .signup-container::before{
   content: "";
