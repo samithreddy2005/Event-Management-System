@@ -11,7 +11,7 @@
 }
 
 /* Background Overlay */
-.signup-container::before {
+.signup-container::before{
   content: "";
   position: absolute;
   top: 0;
